@@ -153,6 +153,8 @@ export default function Home() {
 
   if (data && data?.dlink) {
     console.log(data?.dlink);
+    console.log(data?.thumbs?.url1);
+    
   }
 
   return (

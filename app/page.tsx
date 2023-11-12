@@ -161,20 +161,20 @@ export default function Home() {
     <div className="pt-6 mx-12">
       <nav className="flex justify-between ">
         <div className="self-center">
-          <Link href="/">Terabox Downloader</Link>
+          <Link href="/">G3 Terabox Downloader</Link>
         </div>
         <ul>
           <li>
             {/* <Camera color="red" size={48} /> */}
             <Button className="bg-blue-600">
-              <Link href="https://t.me/RoldexVerse">Telegram</Link>
+              <Link href="https://t.me/RoldexVerse">TelegramDL</Link>
             </Button>
           </li>
         </ul>
       </nav>
       <main className="mt-6 py-10 bg-slate-700 rounded-lg items-center flex flex-col justify-center gap-2">
         <h1 className="text-xl sm:text-3xl font-bold text-center text-white">
-          Terabox Downloader
+          G3 Terabox Downloader
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">
@@ -257,12 +257,12 @@ export default function Home() {
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
               Uploaded On:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold getlink">
+              <span className="text-white  text-md lg:text-2xl font-bold ">
                 {convertEpochToDateTime(data.server_ctime)}
               </span>
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
-              Uploaded :{" "}
+              Uploaded Oon:{" "}
               <span className="text-white  text-md lg:text-2xl font-bold ">
                 {data?.dlink}
               </span>

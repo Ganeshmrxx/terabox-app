@@ -116,7 +116,7 @@ export async function GET(req, res) {
     if (!"list" in responseData2) {
       return NextResponse.json({ error: "Invalid response" }, { status: 400 });
     }
-    console.log(NextResponse.json(responseData2?.list[0], { status: 200 }));
+    console.log(NextResponse.json(responseData2, { status: 200 }));
     
     return NextResponse.json(responseData2?.list[0], { status: 200 });
   } catch (error) {

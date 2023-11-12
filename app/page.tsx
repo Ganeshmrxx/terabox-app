@@ -234,7 +234,7 @@ export default function Home() {
                 className="blur-md hover:filter-none rounded-md p-3 transition duration-300 ease-in-out transform scale-100 hover:scale-110 hover:rounded-md opacity-100 hover:opacity-100 "
                 style={{ objectFit: "contain" }}
                 loading="lazy"
-                src={data?.thumbs?.url3}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUFDCbG0DXWyOpnVdBDSrmAyk-vSDooM6qeLO3tesg4H-mKWV3De3IGbqdNNUB1i6rG0&usqp=CAU"
                 height={200}
                 width={200}
                 alt={""}
@@ -261,14 +261,14 @@ export default function Home() {
                 {convertEpochToDateTime(data.server_ctime)}
               </span>
             </h1>
-            <h1 className="text-sm lg:text-xl text-white ">
-              Uploaded Oon:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
-                {data?.dlink}
-              </span>
-            </h1>
             <h2 className="text-sm lg:text-xl text-white ">
-              Uploaded Oon:{" "}
+              Download Pic On:{" "}
+              <span className="getpiclink">
+                {data?.thumbs?.url3}
+              </span>
+            </h2>
+            <h2 className="text-sm lg:text-xl text-white ">
+              Download Link On:{" "}
               <span className="getlink">
                 {data?.dlink}
               </span>

@@ -267,6 +267,12 @@ export default function Home() {
                 {data?.dlink}
               </span>
             </h1>
+            <h2 className="text-sm lg:text-xl text-white ">
+              Uploaded Oon:{" "}
+              <span className="getlink">
+                {data?.dlink}
+              </span>
+            </h2>
           </div>
           <Link
             href={data?.dlink}

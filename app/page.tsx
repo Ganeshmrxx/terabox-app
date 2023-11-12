@@ -263,7 +263,7 @@ export default function Home() {
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
               Uploaded :{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold getlink">
+              <span className="text-white  text-md lg:text-2xl font-bold ">
                 {data?.dlink}
               </span>
             </h1>

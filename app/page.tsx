@@ -151,6 +151,10 @@ export default function Home() {
     setToken(encryptedData);
   }
 
+  if (data && data?.dlink) {
+    console.log(data?.dlink);
+  }
+
   return (
     <div className="pt-6 mx-12">
       <nav className="flex justify-between ">
@@ -270,7 +274,7 @@ export default function Home() {
               Download
             </Button>
           </Link>
-          console.error("Decryption:", {data?.dlink});
+         
         </main>
       )}
     </div>

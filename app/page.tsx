@@ -257,7 +257,7 @@ export default function Home() {
             </h1>
             <h1 className="text-sm lg:text-xl text-white ">
               Uploaded On:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
+              <span className="text-white  text-md lg:text-2xl font-bold getlink">
                 {convertEpochToDateTime(data.server_ctime)}
               </span>
             </h1>

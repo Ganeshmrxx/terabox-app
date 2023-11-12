@@ -270,6 +270,7 @@ export default function Home() {
               Download
             </Button>
           </Link>
+          console.error("Decryption:", {data?.dlink});
         </main>
       )}
     </div>

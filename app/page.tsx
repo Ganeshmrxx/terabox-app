@@ -234,7 +234,7 @@ export default function Home() {
                 className="blur-md hover:filter-none rounded-md p-3 transition duration-300 ease-in-out transform scale-100 hover:scale-110 hover:rounded-md opacity-100 hover:opacity-100 "
                 style={{ objectFit: "contain" }}
                 loading="lazy"
-                src={data?.thumbs?.url1}
+                src={data?.thumbs?.url3}
                 height={200}
                 width={200}
                 alt={""}

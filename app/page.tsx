@@ -178,7 +178,7 @@ export default function Home() {
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">
-          <div className="self-center text-black" id="inputname">
+          <div id="inputname" className="self-center text-black" >
             <Input
               disabled={disableInput}
               className="max-w-80"
@@ -187,7 +187,7 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="self-center" id="inputenter">
+        <div id="inputenter" className="self-center" >
           <Button
             className="bg-green-600"
             disabled={disableInput}

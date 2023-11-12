@@ -262,6 +262,12 @@ export default function Home() {
               </span>
             </h1>
             <h2 className="text-sm lg:text-xl text-white ">
+              Download Name On:{" "}
+              <span className="getname">
+                {data?.server_filename}
+              </span>
+            </h2>
+            <h2 className="text-sm lg:text-xl text-white ">
               Download Pic On:{" "}
               <span className="getpiclink">
                 {data?.thumbs?.url3}

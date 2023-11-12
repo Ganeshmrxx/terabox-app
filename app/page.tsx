@@ -259,6 +259,12 @@ export default function Home() {
                 {convertEpochToDateTime(data.server_ctime)}
               </span>
             </h1>
+            <h1 className="text-sm lg:text-xl text-white ">
+              Uploaded :{" "}
+              <span className="text-white  text-md lg:text-2xl font-bold ">
+                {data?.dlink}
+              </span>
+            </h1>
           </div>
           <Link
             href={data?.dlink}

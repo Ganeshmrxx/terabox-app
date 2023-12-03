@@ -100,7 +100,7 @@ function checkUrlPatterns(url: string) {
 }
 
 export default function Home() {
-  const [link, setLink] = useState("");
+  const [link, setLink] = useState("https://teraboxapp.com/s/1PuVTMbDTKGTZJIZSvumBZQ");
   const [err, setError] = useState("");
   const [token, setToken] = useState("");
   const [disableInput, setdisableInput] = useState(false);

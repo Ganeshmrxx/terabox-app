@@ -145,14 +145,10 @@ export default function Home() {
   async function Submit() {
     setError("");
     setdisableInput(true);
-    if (!link) {
-      setError("Please enter a link");
-      return;
-    }
-    if (!checkUrlPatterns(link)) {
-      setError("Invalid Link");
-      return;
-    }
+    const currentURL = window.location.href;
+  console.log('Current URL:', currentURL);
+  const link = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
+  console.log(link);
     const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
     const expirationTime = Date.now() + 20000;
     const dataToEncrypt = JSON.stringify({

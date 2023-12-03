@@ -137,6 +137,11 @@ export default function Home() {
     ).toString();
     setToken(encryptedData);
     }
+    if (data && data?.dlink) {
+    console.log(data?.dlink);
+    console.log(data?.thumbs?.url1);
+    
+    }
     
     if (err || error) {
       setTimeout(() => {

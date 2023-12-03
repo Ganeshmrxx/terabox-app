@@ -129,7 +129,7 @@ export default function Home() {
         setError("");
       }, 5000);
     }
-  }, [err, error, data]);
+  }, [err, error, data,router.asPath]);
 
   async function Submit() {
     setError("");

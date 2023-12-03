@@ -118,16 +118,16 @@ export default function Home() {
   );
   
   useEffect(() => {
-    const currentURL = window.location.href;
-    console.log('Current URL:', currentURL);
-    const modifiedURL = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
-    console.log(modifiedURL);
-    if (data || error) {
-      setdisableInput(false);
-      setLink(modifiedURL);
-      const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
-      const expirationTime = Date.now() + 20000;
-      const dataToEncrypt = JSON.stringify({
+  const currentURL = window.location.href;
+  console.log('Current URL:', currentURL);
+  const modifiedURL = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
+  console.log(modifiedURL);
+  if (data || error) {
+    setdisableInput(false);
+    setLink(modifiedURL);
+    const secretKey = "1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6d";
+    const expirationTime = Date.now() + 20000;
+    const dataToEncrypt = JSON.stringify({
       token: link,
       expiresAt: expirationTime,
     });
@@ -136,20 +136,20 @@ export default function Home() {
       secretKey
     ).toString();
     setToken(encryptedData);
+
     if (data && data?.dlink) {
       console.log(data?.dlink);
       console.log(data?.thumbs?.url1);
-      
     }
+  }
 
+  if (err || error) {
+    setTimeout(() => {
+      setError("");
+    }, 5000);
+  }
+}, [err, error, data]);
 
-    }
-    if (err || error) {
-      setTimeout(() => {
-        setError("");
-      }, 5000);
-    }
-  }, [err, error, data]);
  
 
   async function Submit() {

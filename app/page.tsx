@@ -105,7 +105,8 @@ export default function Home() {
   const [link, setLink] = useState("");
   const [err, setError] = useState("");
   const [token, setToken] = useState("");
-  const [disableInput, setdisableInput] = useState(false);
+  
+  const [submitCalled, setSubmitCalled] = useState(false);
 
   const { data, error, isLoading } = useSWR(
     token ? [`/api?data=${encodeURIComponent(token)}`] : null,
@@ -125,7 +126,7 @@ export default function Home() {
   if (data || error) {
     setdisableInput(false);
     setLink(modifiedURL);
-    Submit();
+    
   }
 
   if (err || error) {
@@ -136,9 +137,11 @@ export default function Home() {
 }, [err, error, data]);
 
   useEffect(() => {
-    // Call Submit function when the component mounts
-    Submit();
-  }, []);
+    if (!submitCalled) {
+      Submit();
+      setSubmitCalled(true);
+    }
+  }, [submitCalled]);
 
  
 

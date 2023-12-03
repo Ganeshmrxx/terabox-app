@@ -121,7 +121,7 @@ export default function Home() {
     if (data || error) {
       setdisableInput(false);
       setLink("");
-      console.log(router.asPath);
+    
       
     }
     if (err || error) {
@@ -130,6 +130,11 @@ export default function Home() {
       }, 5000);
     }
   }, [err, error, data,router.asPath]);
+  return (
+    <div className="pt-6 mx-12">
+      console.log(router.asPath);
+    </div>
+  );
 
   async function Submit() {
     setError("");

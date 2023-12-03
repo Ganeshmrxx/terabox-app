@@ -194,7 +194,7 @@ export default function Home() {
         <div className="flex flex-col justify-center ">
           <div id="inputname" className="self-center text-black" >
             <Input
-              disabled={disableInput}
+              
               className="max-w-80"
               placeholder="Enter the link"
               onChange={(e) => setLink("https://teraboxapp.com/s/1PuVTMbDTKGTZJIZSvumBZQ")}
@@ -204,7 +204,7 @@ export default function Home() {
         <div id="inputenter" className="self-center" >
           <Button
             className="bg-green-600"
-            disabled={disableInput}
+            
             onClick={Submit}
           >
             {isLoading && (

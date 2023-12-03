@@ -147,7 +147,7 @@ export default function Home() {
 
   async function Submit() {
     setError("");
-    setdisableInput(true);
+    
     const currentURL = window.location.href;
   console.log('Current URL:', currentURL);
   const link = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");

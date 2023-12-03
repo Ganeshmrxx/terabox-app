@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import useSWR from "swr";
 import CryptoJS from "crypto-js";
 import Image from "next/image";
-import { useRouter } from 'next/router';
+
 
 const fetchWithToken = async (url: URL | RequestInfo) => {
   const res = await fetch(url);
@@ -101,7 +101,7 @@ function checkUrlPatterns(url: string) {
 }
 
 export default function Home() {
-  const router = useRouter();
+ 
   const [link, setLink] = useState("");
   const [err, setError] = useState("");
   const [token, setToken] = useState("");
@@ -121,20 +121,15 @@ export default function Home() {
     if (data || error) {
       setdisableInput(false);
       setLink("");
-    
-      
+
     }
     if (err || error) {
       setTimeout(() => {
         setError("");
       }, 5000);
     }
-  }, [err, error, data,router.asPath]);
-  return (
-    <div className="pt-6 mx-12">
-      console.log(router.asPath);
-    </div>
-  );
+  }, [err, error, data]);
+ 
 
   async function Submit() {
     setError("");

@@ -136,13 +136,14 @@ export default function Home() {
       secretKey
     ).toString();
     setToken(encryptedData);
-    }
     if (data && data?.dlink) {
-    console.log(data?.dlink);
-    console.log(data?.thumbs?.url1);
-    
+      console.log(data?.dlink);
+      console.log(data?.thumbs?.url1);
+      
     }
-    
+
+
+    }
     if (err || error) {
       setTimeout(() => {
         setError("");

@@ -118,6 +118,8 @@ export default function Home() {
   );
   
   useEffect(() => {
+    const currentURL = window.location.href;
+    console.log('Current URL:', currentURL);
     if (data || error) {
       setdisableInput(false);
       setLink("");

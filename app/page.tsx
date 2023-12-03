@@ -100,7 +100,7 @@ function checkUrlPatterns(url: string) {
 }
 
 export default function Home() {
-  const [link, setLink] = useState("https://teraboxapp.com/s/1PuVTMbDTKGTZJIZSvumBZQ");
+  const [link, setLink] = useState("");
   const [err, setError] = useState("");
   const [token, setToken] = useState("");
   const [disableInput, setdisableInput] = useState(false);
@@ -183,7 +183,7 @@ export default function Home() {
               disabled={disableInput}
               className="max-w-80"
               placeholder="Enter the link"
-              onChange={(e) => setLink(e.target.value)}
+              onChange={(e) => setLink("https://teraboxapp.com/s/1PuVTMbDTKGTZJIZSvumBZQ")}
             />
           </div>
         </div>

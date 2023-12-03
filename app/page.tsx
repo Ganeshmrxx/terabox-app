@@ -124,7 +124,8 @@ export default function Home() {
     console.log(modifiedURL);
     if (data || error) {
       setdisableInput(false);
-      setLink("");
+      setLink(modifiedURL);
+      Submit()
 
     }
     if (err || error) {

@@ -120,6 +120,8 @@ export default function Home() {
   useEffect(() => {
     const currentURL = window.location.href;
     console.log('Current URL:', currentURL);
+    const modifiedURL = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
+    console.log(modifiedURL);
     if (data || error) {
       setdisableInput(false);
       setLink("");

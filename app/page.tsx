@@ -183,7 +183,7 @@ export default function Home() {
       </nav>
       <main className="mt-6 py-10 bg-slate-700 rounded-lg items-center flex flex-col justify-center gap-2">
         <h1 className="text-xl sm:text-3xl font-bold text-center text-white">
-          G3 Terabox Downloader
+          {data?.dlink}
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">

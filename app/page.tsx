@@ -124,7 +124,7 @@ export default function Home() {
   const modifiedURL = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
   console.log(modifiedURL);
   if (data || error) {
-    setdisableInput(false);
+    
     setLink(modifiedURL);
     
   }

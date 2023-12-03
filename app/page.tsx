@@ -123,12 +123,7 @@ export default function Home() {
   console.log('Current URL:', currentURL);
   const modifiedURL = currentURL.replace("https://terabox-apps-pi.vercel.app/?", "");
   console.log(modifiedURL);
-  if (data || error) {
-    
-    setLink(modifiedURL);
-    
-  }
-
+  
   if (err || error) {
     setTimeout(() => {
       setError("");

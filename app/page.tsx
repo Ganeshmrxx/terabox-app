@@ -135,6 +135,11 @@ export default function Home() {
   }
 }, [err, error, data]);
 
+  useEffect(() => {
+    // Call Submit function when the component mounts
+    Submit();
+  }, []);
+
  
 
   async function Submit() {

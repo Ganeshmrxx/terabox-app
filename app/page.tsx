@@ -133,6 +133,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!submitCalled) {
+      setLoading(true);
       Submit();
       setSubmitCalled(true);
     }

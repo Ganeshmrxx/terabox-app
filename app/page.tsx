@@ -189,6 +189,10 @@ export default function Home() {
         <div id="inputenter" className="self-center" >
           <Button
             className="bg-green-600"
+            onClick={() => {
+                setLoading(true);
+               
+              }}
           >
             {isLoading && (
               <div role="status">

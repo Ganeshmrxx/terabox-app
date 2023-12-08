@@ -190,11 +190,19 @@ export default function Home() {
         <div id="inputenter" className="self-center" >
           <Button
             className="bg-green-600"
-            onClick={() => {
+            
+          >
+            {!loading && ( // Only show the button if not loading
+            <Button
+              className="bg-green-600"
+              onClick={() => {
                 setLoading(true);
                
               }}
-          >
+            >
+              Click Below Button
+            </Button>
+          )}
             {isLoading && (
               <div role="status">
                 <svg

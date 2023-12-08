@@ -133,7 +133,7 @@ export default function Home() {
 
   useEffect(() => {
     if (!submitCalled) {
-      setLoading(true);
+      
       Submit();
       setSubmitCalled(true);
     }
@@ -190,19 +190,7 @@ export default function Home() {
         <div id="inputenter" className="self-center" >
           <Button
             className="bg-green-600"
-            
           >
-            {!loading && ( // Only show the button if not loading
-            <Button
-              className="bg-green-600"
-              onClick={() => {
-                setLoading(true);
-               
-              }}
-            >
-              Click Below Button
-            </Button>
-          )}
             {isLoading && (
               <div role="status">
                 <svg
@@ -224,6 +212,7 @@ export default function Home() {
                 <span className="sr-only">Loading....</span>
               </div>
             )}
+            {loading && <p className="text-white">Loading..s.</p>}
             Click Below Button
           </Button>
         </div>

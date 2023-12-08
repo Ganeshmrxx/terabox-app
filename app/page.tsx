@@ -210,7 +210,7 @@ export default function Home() {
                   />
                 </svg>
                 <span className="sr-only">Loading....</span>
-                <p className="text-white ml-2">Loading...</p>
+               
               </div>
             )}
             

@@ -214,7 +214,7 @@ export default function Home() {
               </div>
             )}
             
-              {!loading && <p className="text-white">hurrey...</p>}
+              {!isLoading && <p className="text-white">hurrey...</p>}
           </Button>
         </div>
         {error && (

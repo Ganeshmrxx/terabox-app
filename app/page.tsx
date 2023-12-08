@@ -182,9 +182,7 @@ export default function Home() {
         </ul>
       </nav>
       <main className="mt-6 py-10 bg-slate-700 rounded-lg items-center flex flex-col justify-center gap-2">
-        <h1 className="text-xl sm:text-3xl font-bold text-center text-white">
-          Download Now
-        </h1>
+        
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">
          
@@ -213,10 +211,10 @@ export default function Home() {
                     fill="currentFill"
                   />
                 </svg>
-                <span className="sr-only">Loading...</span>
+                <span className="sr-only">Loading....</span>
               </div>
             )}
-            Loading..
+            Click Below Button
           </Button>
         </div>
         {error && (

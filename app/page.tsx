@@ -170,30 +170,25 @@ export default function Home() {
     <div className="pt-6 mx-12">
       <nav className="flex justify-between ">
         <div className="self-center">
-          <Link href="/">{data?.dlink}</Link>
+          <Link href="/"></Link>
         </div>
         <ul>
           <li>
             {/* <Camera color="red" size={48} /> */}
             <Button className="bg-blue-600">
-              <Link href="https://t.me/RoldexVerse">TelegramDL</Link>
+              <Link href="https://t.me/+x2OU_Cy7F64yZjZl">Telegram</Link>
             </Button>
           </li>
         </ul>
       </nav>
       <main className="mt-6 py-10 bg-slate-700 rounded-lg items-center flex flex-col justify-center gap-2">
         <h1 className="text-xl sm:text-3xl font-bold text-center text-white">
-          {data?.dlink}
+          "Download Now"
         </h1>
         <p className="text-center text-white">Enter your Terabox link below</p>
         <div className="flex flex-col justify-center ">
           <div id="inputname" className="self-center text-black" >
-            <Input
-              
-              className="max-w-80"
-              placeholder="Enter the link"
-              onChange={(e) => setLink("https://teraboxapp.com/s/1PuVTMbDTKGTZJIZSvumBZQ")}
-            />
+           
           </div>
         </div>
         <div id="inputenter" className="self-center" >
@@ -223,7 +218,7 @@ export default function Home() {
                 <span className="sr-only">Loading...</span>
               </div>
             )}
-            Download
+            Loading..
           </Button>
         </div>
         {error && (
@@ -237,57 +232,9 @@ export default function Home() {
       </main>
       {data && (
         <main className="my-10 py-10 bg-slate-700 rounded-lg items-start flex flex-col justify-start gap-2">
-          <div className="w-full">
-            <div className="rounded-md flex justify-center items-center ">
-              <Image
-                className="blur-md hover:filter-none rounded-md p-3 transition duration-300 ease-in-out transform scale-100 hover:scale-110 hover:rounded-md opacity-100 hover:opacity-100 "
-                style={{ objectFit: "contain" }}
-                loading="lazy"
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOUFDCbG0DXWyOpnVdBDSrmAyk-vSDooM6qeLO3tesg4H-mKWV3De3IGbqdNNUB1i6rG0&usqp=CAU"
-                height={200}
-                width={200}
-                alt={""}
-              />
-            </div>
-          </div>
+          
           <div className="pl-3 pt-3">
             <div className="pt-10"></div>
-            <h1 className="text-sm lg:text-xl text-white ">
-              Title:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
-                {data?.server_filename}
-              </span>
-            </h1>
-            <h1 className="text-sm lg:text-xl text-white ">
-              File Size:{" "}
-              <span className="text-white text-md lg:text-2xl font-bold ">
-                {getFormattedSize(data.size)}
-              </span>
-            </h1>
-            <h1 className="text-sm lg:text-xl text-white ">
-              Uploaded On:{" "}
-              <span className="text-white  text-md lg:text-2xl font-bold ">
-                {convertEpochToDateTime(data.server_ctime)}
-              </span>
-            </h1>
-            <h2 className="text-sm lg:text-xl text-white ">
-              Download Name On:{" "}
-              <span className="getname">
-                {data?.server_filename}
-              </span>
-            </h2>
-            <h2 className="text-sm lg:text-xl text-white ">
-              Download Pic On:{" "}
-              <span className="getpiclink">
-                {data?.thumbs?.url3}
-              </span>
-            </h2>
-            <h2 className="text-sm lg:text-xl text-white ">
-              Download Link On:{" "}
-              <span className="getlink">
-                {data?.dlink}
-              </span>
-            </h2>
           </div>
           <Link
             href={data?.dlink}
@@ -300,7 +247,7 @@ export default function Home() {
               className="py-0 bg-blue-700 mt-3 text-xl font-bold"
             >
               {" "}
-              Download
+              Play or Watch
             </Button>
           </Link>
          
